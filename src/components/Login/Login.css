@@ -1,0 +1,66 @@
+.loginForm {
+  border: 1px solid rgb(126, 124, 124);
+  border-width: thin;
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.loginData {
+  width: 76%;
+  margin-left: 12%;
+  border: none;
+  border-bottom: 1px ridge rgb(126, 124, 124);
+  background-color: transparent;
+  margin-top: 30px;
+  outline: none;
+}
+.submitBtn {
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 30px;
+  height: 40px;
+  background-color: coral;
+  border: none;
+  color: aliceblue;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.logInAlready {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+.logInLink {
+  float: left;
+  margin-top: 8px;
+  margin-left: 8px;
+  color: rgb(238, 109, 16);
+}
+.socialLogin {
+  width: 76%;
+}
+.socialBtn {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+  height: 40px;
+  border: 1px solid rgb(128, 124, 124);
+  font-size: 13px;
+  border-radius: 20px;
+}
+.or {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 130px max-content 130px;
+  grid-template-rows: 12px 0;
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.or:after,
+.or:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #aaadac;
+}

@@ -1,0 +1,31 @@
+.pickForm {
+  background-color: rgb(231, 228, 231);
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+.pick {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 45px;
+  border: white;
+  border-radius: 5px;
+  outline: none;
+}
+.searchBtn {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 15px;
+  height: 45px;
+}
+h6 {
+  margin-left: 4%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

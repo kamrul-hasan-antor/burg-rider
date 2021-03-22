@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.App {
-  background-image: url("./images/bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
+.hello {
+  background-color: blue;
 }
