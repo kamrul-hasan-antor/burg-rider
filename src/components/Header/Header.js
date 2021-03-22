@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <Navbar className="navigation container" expand="lg">
+      <Navbar className="navigation " expand="lg">
         <Navbar.Brand className="mr-auto ml-auto" to="/">
           <h2 className="title">Burg Riders</h2>
         </Navbar.Brand>
