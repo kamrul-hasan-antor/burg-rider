@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   const [vehicles, setVehicles] = useState([]);
-  console.log(vehicles);
+  // console.log(vehicles);
   useEffect(() => {
     fetch("https://api.mocki.io/v1/a58662f8")
       .then((res) => res.json())

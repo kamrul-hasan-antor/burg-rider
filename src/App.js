@@ -6,6 +6,7 @@ import Destination from "./components/Destination/Destination";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Header from "./components/Header/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const UserContext = createContext();
 
