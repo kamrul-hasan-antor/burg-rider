@@ -8,7 +8,9 @@ const Header = () => {
     <div>
       <Navbar className="navigation " expand="lg">
         <Navbar.Brand className="mr-auto ml-auto" to="/">
-          <h2 className="title">Burg Riders</h2>
+          <Link to="/" className="title nav-link">
+            Burg Riders
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

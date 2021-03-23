@@ -139,20 +139,22 @@ const Login = () => {
           )}
 
           <br />
-          <input
-            className="submitBtn"
-            type="submit"
-            value="Create an account"
-          />
-          <h6 className="logInAlready"> Already have an account?</h6>
+          <button className="submitBtn" type="submit">
+            {newUser ? "Create account" : "Sign In"}
+          </button>
+          <h6 className="logInAlready">
+            {" "}
+            {newUser ? "Already have an account?" : "Don't have an account?"}
+          </h6>
 
           <a
             onClick={() => setNewUser(!newUser)}
             name="oldUser"
-            className="logInLink"
-            to="#login"
+            className="logInLink nav-link"
+            to="/login"
+            href="#login"
           >
-            Login
+            {newUser ? "Sign In" : "Create an account"}
           </a>
           <label htmlFor="oldUser"></label>
         </form>
