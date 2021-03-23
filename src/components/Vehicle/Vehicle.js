@@ -12,11 +12,7 @@ const Vehicle = (props) => {
   return (
     <div className="vehicle col-sm-12 col-md-3">
       <Card className="container border-secondary mt-4">
-        <Card.Img
-          className="img-thumbnail mt-3 p-4"
-          variant="top"
-          src={image}
-        />
+        <Card.Img className="mt-3 p-4 w-75" variant="top" src={image} />
         <Card.Body className="cardTitle">
           <Card.Title>
             <h3>{title} </h3>
