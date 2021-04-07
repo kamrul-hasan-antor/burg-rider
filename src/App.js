@@ -23,15 +23,15 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/destination/:id">
+          <PrivateRoute path="/destination/:id">
             <Destination />
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
-          <Route to="/booking/:id">
+          <PrivateRoute to="/booking/:id">
             <Booking />
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
     </UserContext.Provider>

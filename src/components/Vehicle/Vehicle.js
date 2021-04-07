@@ -1,8 +1,14 @@
 import "./Vehicle.css";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 const Vehicle = (props) => {
   const { name, price, image, id } = props.vehicle;
-
+  const [vehicles, setVehicles] = useState([]);
+  console.log(vehicles);
+  const handleClick = (id) => {
+    const data = [id];
+    setVehicles(data);
+  };
   const location = useLocation();
   const { from } = location.state || { from: { pathname: "/" } };
   return (
@@ -13,7 +19,12 @@ const Vehicle = (props) => {
           <h4 class="card-title">{name} </h4>
           <h4 class="card-title">${price} </h4>
           <Link to={`/destination/${id}`}>
-            <button class="btn btn-info w-50 ">BUY NOW</button>
+            <button
+              onClick={() => handleClick(props.vehicle)}
+              class="btn btn-info w-50 "
+            >
+              BUY NOW
+            </button>
           </Link>
         </div>
       </div>

@@ -4,12 +4,12 @@ import fakeData from "../../fakeData";
 
 const Booking = () => {
   const { id } = useParams();
-  const news = fakeData.find((td) => td.id == id);
-  console.log(news);
+  const data = fakeData.find((td) => td.id == id);
+  console.log(data);
   return (
     <div>
-      {/* <h2>{name}</h2> */}
-      <h2>hi</h2>
+      {/* <h2>{data.name}</h2> */}
+      <h2>This is booking page</h2>
       {id}
     </div>
   );

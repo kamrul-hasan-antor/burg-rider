@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Destination.css";
 import map from "../../images/map.png";
 import { useParams } from "react-router";
@@ -20,7 +20,7 @@ const Destination = () => {
             <h6>Pick To</h6>
             <input className="pick" type="text" name="" id="" />
             <br />
-            <Link to={`/booking/${data.id}`}>
+            <Link to={`/booking/${id}`}>
               <button className="btn btn-info searchBtn">Search</button>
             </Link>
           </form>
