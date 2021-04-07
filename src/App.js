@@ -6,6 +6,7 @@ import Destination from "./components/Destination/Destination";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Header from "./components/Header/Header";
+import Booking from "./components/Booking/Booking";
 
 export const UserContext = createContext();
 
@@ -22,11 +23,14 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <PrivateRoute path="/destination/:vehicleId">
+          <Route path="/destination/:id">
             <Destination />
-          </PrivateRoute>
+          </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route to="/booking/:id">
+            <Booking />
           </Route>
         </Switch>
       </Router>

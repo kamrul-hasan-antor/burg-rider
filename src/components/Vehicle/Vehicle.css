@@ -1,4 +1,3 @@
-.vehicle {
-  display: inline-flex;
-  padding: 20px;
+.mainCard {
+  height: 400px;
 }

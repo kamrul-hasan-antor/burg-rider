@@ -1,18 +1,19 @@
-import { useEffect, useState } from "react";
 import Vehicle from "../Vehicle/Vehicle";
+import FakeData from "../../fakeData/index";
 import "./Home.css";
+import { useState } from "react";
 
 const Home = () => {
   const [vehicles, setVehicles] = useState([]);
-  useEffect(() => {
-    fetch("https://api.mocki.io/v1/a58662f8")
-      .then((res) => res.json())
-      .then((data) => setVehicles(data));
-  }, []);
+  console.log(vehicles);
+  const handleClick = (id) => {
+    const data = [id];
+    setVehicles(data);
+  };
   return (
     <div>
-      {vehicles.map((vehicle) => (
-        <Vehicle vehicle={vehicle}></Vehicle>
+      {FakeData.map((vehicle) => (
+        <Vehicle handleClick={handleClick} vehicle={vehicle}></Vehicle>
       ))}
     </div>
   );

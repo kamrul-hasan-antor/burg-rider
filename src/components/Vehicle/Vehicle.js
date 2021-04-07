@@ -1,28 +1,22 @@
-import React from "react";
 import "./Vehicle.css";
-import { Card, Button } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Vehicle = (props) => {
-  const { title, rent, image, id } = props.vehicle;
-  const history = useHistory();
-  const handleClick = (vehicleId) => {
-    const url = `/destination/${vehicleId}`;
-    history.push(url);
-  };
+  const { name, price, image, id } = props.vehicle;
+
+  const location = useLocation();
+  const { from } = location.state || { from: { pathname: "/" } };
   return (
-    <div className="vehicle col-sm-12 col-md-3">
-      <Card className="container border-secondary mt-4">
-        <Card.Img className="mt-3 p-4 w-75" variant="top" src={image} />
-        <Card.Body className="cardTitle">
-          <Card.Title>
-            <h3>{title} </h3>
-          </Card.Title>
-          <Card.Text>
-            <h5>Rent: {rent} TK</h5>
-          </Card.Text>
-          <Button onClick={() => handleClick(id)}>click me</Button>
-        </Card.Body>
-      </Card>
+    <div className="d-inline-flex col-12 mt-auto col-lg-3 p-4">
+      <div class="mainCard card">
+        <img src={image} class="card-img-top p-2" alt="..." />
+        <div class="card-body text-center ">
+          <h4 class="card-title">{name} </h4>
+          <h4 class="card-title">${price} </h4>
+          <Link to={`/destination/${id}`}>
+            <button class="btn btn-info w-50 ">BUY NOW</button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
