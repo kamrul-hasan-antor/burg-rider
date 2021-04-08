@@ -6,7 +6,6 @@ import { UserContext } from "../../App";
 
 const Header = () => {
   const [loggedInUser, SetLoggedInUser] = useContext(UserContext);
-  console.log(loggedInUser);
   return (
     <div>
       <Navbar className="navigation " expand="lg">
@@ -31,7 +30,7 @@ const Header = () => {
               Contact
             </Link>
             <Link className="ml-2 nav-link" to="/login">
-              {loggedInUser.userName ? loggedInUser.userName : "Login"}
+              {loggedInUser.name ? loggedInUser.name : "Login"}
             </Link>
           </Nav>
         </Navbar.Collapse>

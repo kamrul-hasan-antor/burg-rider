@@ -26,25 +26,12 @@
   border-radius: 5px;
 }
 .logInAlready {
-  float: left;
   margin-top: 10px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .logInLink {
-  float: left;
+  margin-left: 10px;
   color: rgb(238, 109, 16);
-}
-.socialLogin {
-  width: 76%;
-}
-.socialBtn {
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 30px;
-  height: 40px;
-  border: 1px solid rgb(128, 124, 124);
-  font-size: 13px;
-  border-radius: 20px;
 }
 .or {
   text-align: center;
@@ -61,4 +48,17 @@
   content: " ";
   display: block;
   border-bottom: 2px solid #aaadac;
+}
+
+.socialLogin {
+  width: 76%;
+}
+.socialBtn {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+  height: 40px;
+  border: 1px solid rgb(128, 124, 124);
+  font-size: 13px;
+  border-radius: 20px;
 }

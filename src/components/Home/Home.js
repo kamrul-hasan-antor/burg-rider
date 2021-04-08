@@ -1,6 +1,5 @@
 import Vehicle from "../Vehicle/Vehicle";
 import FakeData from "../../fakeData/index";
-import "./Home.css";
 
 const Home = () => {
   return (

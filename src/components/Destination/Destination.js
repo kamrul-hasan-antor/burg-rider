@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Destination.css";
 import map from "../../images/map.png";
 import { useParams } from "react-router";
