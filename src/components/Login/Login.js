@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import Header from "../Header/Header";
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";

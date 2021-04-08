@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../App";
 
 const Header = () => {
+  const [loggedInUser, SetLoggedInUser] = useContext(UserContext);
+  console.log(loggedInUser);
   return (
     <div>
       <Navbar className="navigation " expand="lg">
@@ -28,7 +31,7 @@ const Header = () => {
               Contact
             </Link>
             <Link className="ml-2 nav-link" to="/login">
-              Login
+              {loggedInUser.userName ? loggedInUser.userName : "Login"}
             </Link>
           </Nav>
         </Navbar.Collapse>
